@@ -1,3 +1,4 @@
+```mermaid
 graph TD
   Actuator_configuration["Actuator configuration"]
   AI_models["AI models"]

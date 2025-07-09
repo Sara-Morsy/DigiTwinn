@@ -1,184 +1,297 @@
-```mermaid
 graph TD
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| DT_General_Information_Biomodels_link["Biomodels link"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| DT_General_Information_DT_performance_metrics["DT performance metrics"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| DT_General_Information_DT_readiness_scale["DT readiness scale"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| DT_General_Information_FAIR_sharing_link["FAIR sharing link"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| DT_General_Information_Stage_of_DT_development["Stage of DT development"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| DT_General_Information_Type_of_Digital_Twin["Type of Digital Twin"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| DT_General_Information_Use_case["Use case"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Data_type_Data_type["Data type"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Data_format_Data_format["Data format"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Data_Integration_Data_Integration["Data Integration"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Data_outputs_Data_outputs["Data outputs"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Data_pipeline_Data_pipeline["Data pipeline"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Data_processing_Data_processing["Data processing"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Data_source_Data_source["Data source"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Data_Storage_Data_Storage["Data Storage"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Data_archive_services_Data_archive_services["Data archive services"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Data_streaming_Data_streaming["Data streaming"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Data_Transformation_Data_Transformation["Data Transformation"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| DT_Model_Repository_DT_Model_Repository["DT Model Repository"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| DT_Instance_Repository_DT_Instance_Repository["DT Instance Repository"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Real_time_Processing_Real_time_Processing["Real-time Processing"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Sensor_Sensor["Sensor"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Sensor_metadata_Sensor_metadata["Sensor metadata"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Simulation_Model_Repository_Simulation_Model_Repository["Simulation Model Repository"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Synthetic_data_generation_Synthetic_data_generation["Synthetic data generation"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Temporal_Data_Store_Temporal_Data_Store["Temporal Data Store"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| API_Services_API_Services["API Services"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Digital_Twin_Federation_Digital_Twin_Federation["Digital Twin Federation"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Interoperability_Interoperability["Interoperability"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Network_architecture_Network_architecture["Network architecture"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Ontology_Ontology["Ontology"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| CollaborationPlatformIntegration_CollaborationPlatformIntegration["CollaborationPlatformIntegration"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| EnterpriseSystemIntegration_EnterpriseSystemIntegration["EnterpriseSystemIntegration"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| OTIoTSystemIntegration_OTIoTSystemIntegration["OTIoTSystemIntegration"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| AI_Model_Repository_AI_Model_Repository["AI Model Repository"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| AI_models_AI_models["AI models"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Alerts_Notifications_Alerts_Notifications["Alerts & Notifications"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Analytical_model_Analytical_model["Analytical model"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Cloud_node_Cloud_node["Cloud node"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Compute_resources_for_data_analysis_Compute_resources["Compute resources"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Distributed_Ledger_Smart_Contracts_Distributed_Ledger_Smart_Contracts["Distributed Ledger & Smart Contracts"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Edge_AI_Intelligence_Edge_AI_Intelligence["Edge AI & Intelligence"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Edge_node_Edge_node["Edge node"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Mathematical_models_Mathematical_models["Mathematical models"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Model_performance_metrics_Model_performance_metrics["Model performance metrics"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Prediction_Prediction["Prediction"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Prescriptive_Recommendations_Prescriptive_Recommendations["Prescriptive Recommendations"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Simulation_models_Simulation_models["Simulation models"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Actuator_configuration_Actuator_configuration["Actuator configuration"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Compliance_indicator_Compliance_indicator["Compliance indicator"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Device_Management_Device_Management["Device Management"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Event_Logging_Event_Logging["Event Logging"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| I_O_performance_metrics_I_O_performance_metrics["I/O performance metrics"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| System_Monitoring_System_Monitoring["System Monitoring"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| CommandAndControl_CommandAndControl["CommandAndControl"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Orchestration_Orchestration["Orchestration"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Data_encryption_Data_encryption["Data encryption"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Privacy_Privacy["Privacy"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Reliability_Reliability["Reliability"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Resilience_Resilience["Resilience"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Security_Security["Security"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| 3D_Rendering_3D_Rendering["3D Rendering"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Advanced_Visualization_Advanced_Visualization["Advanced Visualization"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Augmented_Reality_Augmented_Reality["Augmented Reality"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Dashboards_Dashboards["Dashboards"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Entity_Relationship_Visualization_Entity_Relationship_Visualization["Entity Relationship Visualization"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Gamification_Gamification["Gamification"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Gaming_Engine_Visualization_Gaming_Engine_Visualization["Gaming Engine Visualization"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Real_time_Monitoring_Real_time_Monitoring["Real-time Monitoring"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|Mentions| Virtual_Reality_Virtual_Reality["Virtual Reality"]
-  User_Experience_3D_Rendering["3D Rendering"] -->|used_by| Dashboards_User_Experience["User Experience"]
-  Management_Actuator_configuration["Actuator configuration"] -->|uses| data_outputs_Data_services["Data services"]
-  Management_Actuator_configuration["Actuator configuration"] -->|connected_to| Device_Management_Management["Management"]
-  Management_Actuator_configuration["Actuator configuration"] -->|act_based_on| Prescriptive_Recommendations_Intelligence["Intelligence"]
-  User_Experience_Advanced_visualization["Advanced visualization"] -->|used_by| Dashboards_User_Experience["User Experience"]
-  Intelligence_AI_model_repository["AI model repository"] -->|hosts| AI_models_Intelligence["Intelligence"]
-  Intelligence_AI_model_repository["AI model repository"] -->|hosts| Edge_AI_Intelligence_Intelligence["Intelligence"]
-  Intelligence_AI_model_repository["AI model repository"] -->|contains| EdgeAI_Intelligence["Intelligence"]
-  Intelligence_AI_models["AI models"] -->|part_of| Analytical_model_Intelligence["Intelligence"]
-  Intelligence_Analytical_model["Analytical model"] -->|uses| Compute_resources_for_data_analysis_Intelligence["Intelligence"]
-  Intelligence_Analytical_model["Analytical model"] -->|evaluated_by| model_performance_metrics_Intelligence["Intelligence"]
-  Data_services_Archive_services["Archive services"] -->|supports| Digital_Twin_DT_Model_Repository_Data_services["Data services"]
-  Data_services_Asynchronous_integration["Asynchronous integration"] -->|type_of| Data_Integration_Data_services["Data services"]
-  User_Experience_Augmented_reality["Augmented reality"] -->|used_by| Dashboards_User_Experience["User Experience"]
-  User_Experience_Augmented_reality_AR["Augmented reality AR"] -->|extends| Dashboards_User_Experience["User Experience"]
-  DT_General_Information_Biomodels_link["Biomodels link"] -->|contains| Mathematical_models_Intelligence["Intelligence"]
-  Intelligence_Cloud_node["Cloud node"] -->|part_of| Network_architecture_Integration["Integration"]
-  Integration_Collaboration_platform_integration["Collaboration platform integration"] -->|coordinates| Digital_Twin_Federation_Integration["Integration"]
-  Integration_Collaboration_platform_integration["Collaboration platform integration"] -->|coordinates| Distributed_Ledger_Smart_Contracts_Data_services["Data services"]
-  Management_Compliance_indicator["Compliance indicator"] -->|describes| Paper_Title_Paper_Metadata["Paper Metadata"]
-  Data_services_Compute_resources_for_data_analysis["Compute resources for data analysis"] -->|used_by| Analytical_model_Intelligence["Intelligence"]
-  Data_services_Compute_resources_for_data_analysis["Compute resources for data analysis"] -->|evaluated_by| I_O_performance_metrics_Management["Management"]
-  User_Experience_Dashboards["Dashboards"] -->|enhanced_by| 3D_Rendering_User_Experience["User Experience"]
-  User_Experience_Dashboards["Dashboards"] -->|display| Advanced_visualization_User_Experience["User Experience"]
-  User_Experience_Dashboards["Dashboards"] -->|display| Alerts_Notifications_User_Experience["User Experience"]
-  User_Experience_Dashboards["Dashboards"] -->|enhanced_by| Augmented_reality_User_Experience["User Experience"]
-  User_Experience_Dashboards["Dashboards"] -->|enhanced_by| Gamification_User_Experience["User Experience"]
-  User_Experience_Dashboards["Dashboards"] -->|enhanced_by| Gaming_Engine_Visualization_User_Experience["User Experience"]
-  User_Experience_Dashboards["Dashboards"] -->|enhanced_by| Virtual_Reality__User_Experience["User Experience"]
-  Data_services_Data_aggregation["Data aggregation"] -->|stored_in| Data_Storage__Data_services["Data services"]
-  Data_services_Data_archive_services["Data archive services"] -->|supports| Digital_Twin_DT_Model_Repository_Data_services["Data services"]
-  Data_services_Data_contextualization["Data contextualization"] -->|enhances| Analytical_model_Data_services["Data services"]
-  Data_services_Data_Encryption["Data Encryption"] -->|protects| Data_archive_services_Data_services["Data services"]
-  Data_services_Data_Encryption["Data Encryption"] -->|secures| Data_Storage_Data_services["Data services"]
-  Data_services_Data_integration["Data integration"] -->|combines| Data_source_Data_services["Data services"]
-  Data_services_data_outputs["data outputs"] -->|maintained_in| Data_archive_services_Data_services["Data services"]
-  Data_services_data_outputs["data outputs"] -->|presented_as| Dashboards_User_Experience["User Experience"]
-  Data_services_data_pipeline["data pipeline"] -->|feeds| Data_aggregation_Data_services["Data services"]
-  Data_services_data_pipeline["data pipeline"] -->|produces| data_outputs_Data_services["Data services"]
-  Data_services_Data_processing["Data processing"] -->|includes| data_pipeline_Data_services["Data services"]
-  Data_services_Data_processing["Data processing"] -->|triggers| Data_Transformation_Data_services["Data services"]
-  Data_services_Data_processing["Data processing"] -->|includes| Real_time_Processing_Data_services["Data services"]
-  Data_services_Data_source["Data source"] -->|provides| Data_format_Data_services["Data services"]
-  Data_services_Data_source["Data source"] -->|transformed_by| Data_Integration_Data_services["Data services"]
-  Data_services_Data_source["Data source"] -->|feeds| Data_processing_Data_services["Data services"]
-  Data_services_Data_source["Data source"] -->|provides| Data_type_Data_services["Data services"]
-  Data_services_Data_source["Data source"] -->|located_at| Edge_node_Intelligence["Intelligence"]
-  Data_services_Data_storage["Data storage"] -->|supports| Digital_Twin_DT_Model_Repository_Data_services["Data services"]
-  Data_services_Data_streaming["Data streaming"] -->|supported_by| Network_architecture_Integration["Integration"]
-  Data_services_Data_transformation["Data transformation"] -->|supports| Data_contextualization_Data_services["Data services"]
-  Management_Device_management["Device management"] -->|logs| Event_Logging_Management["Management"]
-  Trustworthiness_Security["Security"] -->|enhances| Reliability_Trustworthiness["Trustworthiness"]
-  Integration_Digital_twin_federation["Digital twin federation"] -->|requires| Collaboration_platform_integration_Integration["Integration"]
-  Integration_Digital_twin_federation["Digital twin federation"] -->|includes| DT_Instance_Repository_Data_services["Data services"]
-  Integration_Digital_twin_federation["Digital twin federation"] -->|integrates| OT_IoT_System_Integration_Integration["Integration"]
-  Data_services_DT_instance_repository["DT instance repository"] -->|synchronized_with| Temporal_Data_Store_Data_services["Data services"]
-  Data_services_DT_model_repository["DT model repository"] -->|contains| Analytical_model_Intelligence["Intelligence"]
-  Data_services_DT_model_repository["DT model repository"] -->|linked_with| DT_Instance_Repository_Data_services["Data services"]
-  Intelligence_Edge_AI_Intelligence["Edge AI & Intelligence"] -->|enabled_by| API_services_Integration["Integration"]
-  Intelligence_Edge_AI_Intelligence["Edge AI & Intelligence"] -->|enables| Prediction_Intelligence["Intelligence"]
-  Intelligence_Edge_node["Edge node"] -->|part_of| Network_architecture_Integration["Integration"]
-  Integration_Enterprise_system_integration["Enterprise system integration"] -->|linked_to| API_services_Integration["Integration"]
-  User_Experience_Entity_relationship_visualization["Entity relationship visualization"] -->|used_by| Dashboards_User_Experience["User Experience"]
-  Management_Event_logging["Event logging"] -->|feeds| System_Monitoring_Management["Management"]
-  Intelligence_Federated_learning["Federated learning"] -->|part_of| Analytical_model_Intelligence["Intelligence"]
-  User_Experience_Gamification["Gamification"] -->|used_by| Dashboards_User_Experience["User Experience"]
-  User_Experience_Gamification["Gamification"] -->|improves| User_experience_User_Experience["User Experience"]
-  User_Experience_Gaming_engine_Visualization["Gaming engine Visualization"] -->|powers| 3D_Rendering_User_Experience["User Experience"]
-  User_Experience_Gaming_engine_Visualization["Gaming engine Visualization"] -->|used_by| Dashboards_User_Experience["User Experience"]
-  Integration_interoperability["interoperability"] -->|supports| Digital_Twin_Federation_Integration["Integration"]
-  Intelligence_Mathematical_models["Mathematical models"] -->|part_of| Analytical_model_Intelligence["Intelligence"]
-  Integration_Network_architecture["Network architecture"] -->|supports| Data_streaming_Data_services["Data services"]
-  Integration_Ontology["Ontology"] -->|supports| interoperability_Integration["Integration"]
-  Integration_Orchestration["Orchestration"] -->|part_of| Network_architecture_Integration["Integration"]
-  Integration_OT_IoT_system_integration["OT/IoT system integration"] -->|connected_to| Enterprise_System_Integration_Integration["Integration"]
-  Paper_Metadata_Paper_abstract["Paper abstract"] -->|summarizes| Paper_Title_Paper_Metadata["Paper Metadata"]
-  Paper_Metadata_Paper_DOI["Paper DOI"] -->|identifies| Paper_Title_Paper_Metadata["Paper Metadata"]
-  Paper_Metadata_Paper_Title["Paper Title"] -->|linked_to| Biomodels_link_DT_General_Information["DT General Information"]
-  Paper_Metadata_Paper_Title["Paper Title"] -->|has_metric| DT_performance_metrics_DT_General_Information["DT General Information"]
-  Paper_Metadata_Paper_Title["Paper Title"] -->|evaluated_by| DT_readiness_scale_DT_General_Information["DT General Information"]
-  Paper_Metadata_Paper_Title["Paper Title"] -->|linked_to| FAIR_sharing_link_DT_General_Information["DT General Information"]
-  Paper_Metadata_Paper_Title["Paper Title"] -->|mentions| Ontology_Integration["Integration"]
-  Paper_Metadata_Paper_Title["Paper Title"] -->|belongs_to| Scientific_domain_DT_General_Information["DT General Information"]
-  Paper_Metadata_Paper_Title["Paper Title"] -->|references| Scientific_domain_DT_General_Information["DT General Information"]
-  Paper_Metadata_Paper_Title["Paper Title"] -->|describes| Stage_of_development_DT_General_Information["DT General Information"]
-  Paper_Metadata_Paper_Title["Paper Title"] -->|describes| Stage_of_development_DT_General_Information["DT General Information"]
-  Paper_Metadata_Paper_Title["Paper Title"] -->|documents| Type_of_Digital_Twin_DT_General_Information["DT General Information"]
-  Paper_Metadata_Paper_Title["Paper Title"] -->|describes| Use_case_DT_General_Information["DT General Information"]
-  Paper_Metadata_Paper_Title["Paper Title"] -->|applies_to| Use_case_DT_General_Information["DT General Information"]
-  Intelligence_Prediction["Prediction"] -->|leads_to| Prescriptive_recommendations_Intelligence["Intelligence"]
-  Intelligence_Prediction["Prediction"] -->|related_to| Use_case_DT_General_Information["DT General Information"]
-  Intelligence_Prescriptive_recommendations["Prescriptive recommendations"] -->|generated_from| Prediction_Intelligence["Intelligence"]
-  Intelligence_Prescriptive_recommendations["Prescriptive recommendations"] -->|related_to| Use_case_DT_General_Information["DT General Information"]
-  Trustworthiness_Privacy["Privacy"] -->|protected_by| Security_Trustworthiness["Trustworthiness"]
-  User_Experience_Real_time_Monitoring["Real-time Monitoring"] -->|drives| Dashboards_User_Experience["User Experience"]
-  Trustworthiness_Reliability["Reliability"] -->|contributes_to| Resilience_Trustworthiness["Trustworthiness"]
-  Trustworthiness_Reliability["Reliability"] -->|achieved_through| Resilience_Trustworthiness["Trustworthiness"]
-  Trustworthiness_Reliability["Reliability"] -->|monitored_by| System_Monitoring_Management["Management"]
-  DT_General_Information_Scientific_Domain["Scientific Domain"] -->|related_to| Use_case_DT_General_Information["DT General Information"]
-  Data_services_Sensor["Sensor"] -->|provides| Data_source_Data_services["Data services"]
-  Data_services_Sensor["Sensor"] -->|has_specification| Sensor_metadata_Data_services["Data services"]
-  Data_services_Sensor_metadata["Sensor metadata"] -->|describes| Sensor_Data_services["Data services"]
-  Intelligence_Simulation_models["Simulation models"] -->|part_of| Analytical_model_Intelligence["Intelligence"]
-  Intelligence_Simulation_models["Simulation models"] -->|stored_in| Simulation_Model_Repository_Intelligence["Intelligence"]
-  Intelligence_Synthetic_data_generation["Synthetic data generation"] -->|produced_by| Analytical_model_Intelligence["Intelligence"]
-  Management_System_monitoring["System monitoring"] -->|controlled_by| Command_and_control_Management["Management"]
-  Management_System_monitoring["System monitoring"] -->|tracks| Device_Management_Management["Management"]
-  Data_services_Temporal_data_store["Temporal data store"] -->|supports| Real_time_Monitoring_User_Experience["User Experience"]
-  DT_General_Information_Type_of_Digital_Twin["Type of Digital Twin"] -->|related_to| DT_readiness_scale_DT_General_Information["DT General Information"]
-  DT_General_Information_Type_of_Digital_Twin["Type of Digital Twin"] -->|classified_as| Stage_of_development_DT_General_Information["DT General Information"]
-  User_Experience_Virtual_reality["Virtual reality"] -->|used_by| Dashboards_User_Experience["User Experience"]
+  Actuator_configuration["Actuator configuration"]
+  AI_models["AI models"]
+  Distributed_Ledger_&_Smart_Contracts["Distributed Ledger & Smart Contracts"]
+  Edge_node["Edge node"]
+  System_monitoring["System monitoring"]
+  Virtual_Reality["Virtual Reality"]
+  Command_and_control["Command and control"]
+  Simulation_Model_Repository["Simulation Model Repository"]
+  I/O_performance_metrics["I/O performance metrics"]
+  Data_Storage["Data Storage"]
+  Virtual_reality["Virtual reality"]
+  data_pipeline["data pipeline"]
+  Paper_DOI["Paper DOI"]
+  Prediction["Prediction"]
+  Sensor["Sensor"]
+  Paper_abstract["Paper abstract"]
+  DT_performance_metrics["DT performance metrics"]
+  Simulation_models["Simulation models"]
+  Entity_Relationship_Visualization["Entity Relationship Visualization"]
+  Event_Logging["Event Logging"]
+  Dashboards["Dashboards"]
+  Digital_twin_federation["Digital twin federation"]
+  Data_pipeline["Data pipeline"]
+  Enterprise_system_integration["Enterprise system integration"]
+  Alerts_&_Notifications["Alerts & Notifications"]
+  Archive_services["Archive services"]
+  Data_outputs["Data outputs"]
+  Resilience["Resilience"]
+  User_experience["User experience"]
+  OT/IoT_System_Integration["OT/IoT System Integration"]
+  Data_storage["Data storage"]
+  API_services["API services"]
+  Scientific_Domain["Scientific Domain"]
+  CollaborationPlatformIntegration["CollaborationPlatformIntegration"]
+  model_performance_metrics["model performance metrics"]
+  Prescriptive_recommendations["Prescriptive recommendations"]
+  Prescriptive_Recommendations["Prescriptive Recommendations"]
+  DT_Instance_Repository["DT Instance Repository"]
+  Data_Integration["Data Integration"]
+  Advanced_Visualization["Advanced Visualization"]
+  EdgeAI["EdgeAI"]
+  Paper_Title["Paper Title"]
+  Data_Transformation["Data Transformation"]
+  Interoperability["Interoperability"]
+  Data_type["Data type"]
+  Advanced_visualization["Advanced visualization"]
+  Ontology["Ontology"]
+  Analytical_model["Analytical model"]
+  AI_Model_Repository["AI Model Repository"]
+  Mathematical_models["Mathematical models"]
+  Augmented_reality["Augmented reality"]
+  Compute_resources_for_data_analysis["Compute resources for data analysis"]
+  DT_Model_Repository["DT Model Repository"]
+  Entity_relationship_visualization["Entity relationship visualization"]
+  AI_model_repository["AI model repository"]
+  Network_architecture["Network architecture"]
+  Data_source["Data source"]
+  Data_streaming["Data streaming"]
+  Cloud_node["Cloud node"]
+  Scientific_domain["Scientific domain"]
+  Data_format["Data format"]
+  CommandAndControl["CommandAndControl"]
+  Model_performance_metrics["Model performance metrics"]
+  Reliability["Reliability"]
+  Data_processing["Data processing"]
+  Biomodels_link["Biomodels link"]
+  Data_integration["Data integration"]
+  Use_case["Use case"]
+  Compliance_indicator["Compliance indicator"]
+  Device_Management["Device Management"]
+  Type_of_Digital_Twin["Type of Digital Twin"]
+  Data_encryption["Data encryption"]
+  Edge_AI_&_Intelligence["Edge AI & Intelligence"]
+  Event_logging["Event logging"]
+  DT_readiness_scale["DT readiness scale"]
+  Collaboration_platform_integration["Collaboration platform integration"]
+  Device_management["Device management"]
+  DT_model_repository["DT model repository"]
+  Gamification["Gamification"]
+  Digital_Twin_Federation["Digital Twin Federation"]
+  Stage_of_development["Stage of development"]
+  OTIoTSystemIntegration["OTIoTSystemIntegration"]
+  FAIR_sharing_link["FAIR sharing link"]
+  Augmented_Reality["Augmented Reality"]
+  OT/IoT_system_integration["OT/IoT system integration"]
+  Data_archive_services["Data archive services"]
+  Enterprise_System_Integration["Enterprise System Integration"]
+  DT_General_Information["DT General Information"]
+  Orchestration["Orchestration"]
+  Augmented_reality_AR["Augmented reality AR"]
+  Synthetic_data_generation["Synthetic data generation"]
+  Federated_learning["Federated learning"]
+  Privacy["Privacy"]
+  API_Services["API Services"]
+  interoperability["interoperability"]
+  Data_contextualization["Data contextualization"]
+  Data_aggregation["Data aggregation"]
+  Data_Encryption["Data Encryption"]
+  Gaming_engine_Visualization["Gaming engine Visualization"]
+  Data_transformation["Data transformation"]
+  System_Monitoring["System Monitoring"]
+  Real-time_Processing["Real-time Processing"]
+  Real-time_Monitoring["Real-time Monitoring"]
+  Temporal_Data_Store["Temporal Data Store"]
+  Asynchronous_integration["Asynchronous integration"]
+  3D_Rendering["3D Rendering"]
+  DT_instance_repository["DT instance repository"]
+  EnterpriseSystemIntegration["EnterpriseSystemIntegration"]
+  Security["Security"]
+  Digital_Twin_(DT)_Model_Repository["Digital Twin (DT) Model Repository"]
+  Temporal_data_store["Temporal data store"]
+  Gaming_Engine_Visualization["Gaming Engine Visualization"]
+  Sensor_metadata["Sensor metadata"]
+  data_outputs["data outputs"]
+  Paper_DOI -- "Mentions" --> DT_General_Information
+  Paper_DOI -- "Mentions" --> DT_General_Information
+  Paper_DOI -- "Mentions" --> DT_General_Information
+  Paper_DOI -- "Mentions" --> DT_General_Information
+  Paper_DOI -- "Mentions" --> DT_General_Information
+  Paper_DOI -- "Mentions" --> DT_General_Information
+  Paper_DOI -- "Mentions" --> DT_General_Information
+  Paper_DOI -- "Mentions" --> Data_type
+  Paper_DOI -- "Mentions" --> Data_format
+  Paper_DOI -- "Mentions" --> Data_Integration
+  Paper_DOI -- "Mentions" --> Data_outputs
+  Paper_DOI -- "Mentions" --> Data_pipeline
+  Paper_DOI -- "Mentions" --> Data_processing
+  Paper_DOI -- "Mentions" --> Data_source
+  Paper_DOI -- "Mentions" --> Data_Storage
+  Paper_DOI -- "Mentions" --> Data_archive_services
+  Paper_DOI -- "Mentions" --> Data_streaming
+  Paper_DOI -- "Mentions" --> Data_Transformation
+  Paper_DOI -- "Mentions" --> DT_Model_Repository
+  Paper_DOI -- "Mentions" --> DT_Instance_Repository
+  Paper_DOI -- "Mentions" --> Real-time_Processing
+  Paper_DOI -- "Mentions" --> Sensor
+  Paper_DOI -- "Mentions" --> Sensor_metadata
+  Paper_DOI -- "Mentions" --> Simulation_Model_Repository
+  Paper_DOI -- "Mentions" --> Synthetic_data_generation
+  Paper_DOI -- "Mentions" --> Temporal_Data_Store
+  Paper_DOI -- "Mentions" --> API_Services
+  Paper_DOI -- "Mentions" --> Digital_Twin_Federation
+  Paper_DOI -- "Mentions" --> Interoperability
+  Paper_DOI -- "Mentions" --> Network_architecture
+  Paper_DOI -- "Mentions" --> Ontology
+  Paper_DOI -- "Mentions" --> CollaborationPlatformIntegration
+  Paper_DOI -- "Mentions" --> EnterpriseSystemIntegration
+  Paper_DOI -- "Mentions" --> OTIoTSystemIntegration
+  Paper_DOI -- "Mentions" --> AI_Model_Repository
+  Paper_DOI -- "Mentions" --> AI_models
+  Paper_DOI -- "Mentions" --> Alerts_&_Notifications
+  Paper_DOI -- "Mentions" --> Analytical_model
+  Paper_DOI -- "Mentions" --> Cloud_node
+  Paper_DOI -- "Mentions" --> Compute_resources_for_data_analysis
+  Paper_DOI -- "Mentions" --> Distributed_Ledger_&_Smart_Contracts
+  Paper_DOI -- "Mentions" --> Edge_AI_&_Intelligence
+  Paper_DOI -- "Mentions" --> Edge_node
+  Paper_DOI -- "Mentions" --> Mathematical_models
+  Paper_DOI -- "Mentions" --> Model_performance_metrics
+  Paper_DOI -- "Mentions" --> Prediction
+  Paper_DOI -- "Mentions" --> Prescriptive_Recommendations
+  Paper_DOI -- "Mentions" --> Simulation_models
+  Paper_DOI -- "Mentions" --> Actuator_configuration
+  Paper_DOI -- "Mentions" --> Compliance_indicator
+  Paper_DOI -- "Mentions" --> Device_Management
+  Paper_DOI -- "Mentions" --> Event_Logging
+  Paper_DOI -- "Mentions" --> I/O_performance_metrics
+  Paper_DOI -- "Mentions" --> System_Monitoring
+  Paper_DOI -- "Mentions" --> CommandAndControl
+  Paper_DOI -- "Mentions" --> Orchestration
+  Paper_DOI -- "Mentions" --> Data_encryption
+  Paper_DOI -- "Mentions" --> Privacy
+  Paper_DOI -- "Mentions" --> Reliability
+  Paper_DOI -- "Mentions" --> Resilience
+  Paper_DOI -- "Mentions" --> Security
+  Paper_DOI -- "Mentions" --> 3D_Rendering
+  Paper_DOI -- "Mentions" --> Advanced_Visualization
+  Paper_DOI -- "Mentions" --> Augmented_Reality
+  Paper_DOI -- "Mentions" --> Dashboards
+  Paper_DOI -- "Mentions" --> Entity_Relationship_Visualization
+  Paper_DOI -- "Mentions" --> Gamification
+  Paper_DOI -- "Mentions" --> Gaming_Engine_Visualization
+  Paper_DOI -- "Mentions" --> Real-time_Monitoring
+  Paper_DOI -- "Mentions" --> Virtual_Reality
+  3D_Rendering -- "used_by" --> Dashboards
+  Actuator_configuration -- "uses" --> data_outputs
+  Actuator_configuration -- "connected_to" --> Device_Management
+  Actuator_configuration -- "act_based_on" --> Prescriptive_Recommendations
+  Advanced_visualization -- "used_by" --> Dashboards
+  AI_model_repository -- "hosts" --> AI_models
+  AI_model_repository -- "hosts" --> Edge_AI_&_Intelligence
+  AI_model_repository -- "contains" --> EdgeAI
+  AI_models -- "part_of" --> Analytical_model
+  Analytical_model -- "uses" --> Compute_resources_for_data_analysis
+  Analytical_model -- "evaluated_by" --> model_performance_metrics
+  Archive_services -- "supports" --> Digital_Twin_(DT)_Model_Repository
+  Asynchronous_integration -- "type_of" --> Data_Integration
+  Augmented_reality -- "used_by" --> Dashboards
+  Augmented_reality_AR -- "extends" --> Dashboards
+  Biomodels_link -- "contains" --> Mathematical_models
+  Cloud_node -- "part_of" --> Network_architecture
+  Collaboration_platform_integration -- "coordinates" --> Digital_Twin_Federation
+  Collaboration_platform_integration -- "coordinates" --> Distributed_Ledger_&_Smart_Contracts
+  Compliance_indicator -- "describes" --> Paper_Title
+  Compute_resources_for_data_analysis -- "used_by" --> Analytical_model
+  Compute_resources_for_data_analysis -- "evaluated_by" --> I/O_performance_metrics
+  Dashboards -- "enhanced_by" --> 3D_Rendering
+  Dashboards -- "display" --> Advanced_visualization
+  Dashboards -- "display" --> Alerts_&_Notifications
+  Dashboards -- "enhanced_by" --> Augmented_reality
+  Dashboards -- "enhanced_by" --> Gamification
+  Dashboards -- "enhanced_by" --> Gaming_Engine_Visualization
+  Dashboards -- "enhanced_by" --> Virtual_Reality
+  Data_aggregation -- "stored_in" --> Data_Storage
+  Data_archive_services -- "supports" --> Digital_Twin_(DT)_Model_Repository
+  Data_contextualization -- "enhances" --> Analytical_model
+  Data_Encryption -- "protects" --> Data_archive_services
+  Data_Encryption -- "secures" --> Data_Storage
+  Data_integration -- "combines" --> Data_source
+  data_outputs -- "maintained_in" --> Data_archive_services
+  data_outputs -- "presented_as" --> Dashboards
+  data_pipeline -- "feeds" --> Data_aggregation
+  data_pipeline -- "produces" --> data_outputs
+  Data_processing -- "includes" --> data_pipeline
+  Data_processing -- "triggers" --> Data_Transformation
+  Data_processing -- "includes" --> Real-time_Processing
+  Data_source -- "provides" --> Data_format
+  Data_source -- "transformed_by" --> Data_Integration
+  Data_source -- "feeds" --> Data_processing
+  Data_source -- "provides" --> Data_type
+  Data_source -- "located_at" --> Edge_node
+  Data_storage -- "supports" --> Digital_Twin_(DT)_Model_Repository
+  Data_streaming -- "supported_by" --> Network_architecture
+  Data_transformation -- "supports" --> Data_contextualization
+  Device_management -- "logs" --> Event_Logging
+  Security -- "enhances" --> Reliability
+  Digital_twin_federation -- "requires" --> Collaboration_platform_integration
+  Digital_twin_federation -- "includes" --> DT_Instance_Repository
+  Digital_twin_federation -- "integrates" --> OT/IoT_System_Integration
+  DT_instance_repository -- "synchronized_with" --> Temporal_Data_Store
+  DT_model_repository -- "contains" --> Analytical_model
+  DT_model_repository -- "linked_with" --> DT_Instance_Repository
+  Edge_AI_&_Intelligence -- "enabled_by" --> API_services
+  Edge_AI_&_Intelligence -- "enables" --> Prediction
+  Edge_node -- "part_of" --> Network_architecture
+  Enterprise_system_integration -- "linked_to" --> API_services
+  Entity_relationship_visualization -- "used_by" --> Dashboards
+  Event_logging -- "feeds" --> System_Monitoring
+  Federated_learning -- "part_of" --> Analytical_model
+  Gamification -- "used_by" --> Dashboards
+  Gamification -- "improves" --> User_experience
+  Gaming_engine_Visualization -- "powers" --> 3D_Rendering
+  Gaming_engine_Visualization -- "used_by" --> Dashboards
+  interoperability -- "supports" --> Digital_Twin_Federation
+  Mathematical_models -- "part_of" --> Analytical_model
+  Network_architecture -- "supports" --> Data_streaming
+  Ontology -- "supports" --> interoperability
+  Orchestration -- "part_of" --> Network_architecture
+  OT/IoT_system_integration -- "connected_to" --> Enterprise_System_Integration
+  Paper_abstract -- "summarizes" --> Paper_Title
+  Paper_DOI -- "identifies" --> Paper_Title
+  Paper_Title -- "linked_to" --> Biomodels_link
+  Paper_Title -- "has_metric" --> DT_performance_metrics
+  Paper_Title -- "evaluated_by" --> DT_readiness_scale
+  Paper_Title -- "linked_to" --> FAIR_sharing_link
+  Paper_Title -- "mentions" --> Ontology
+  Paper_Title -- "belongs_to" --> Scientific_domain
+  Paper_Title -- "references" --> Scientific_domain
+  Paper_Title -- "describes" --> Stage_of_development
+  Paper_Title -- "describes" --> Stage_of_development
+  Paper_Title -- "documents" --> Type_of_Digital_Twin
+  Paper_Title -- "describes" --> Use_case
+  Paper_Title -- "applies_to" --> Use_case
+  Prediction -- "leads_to" --> Prescriptive_recommendations
+  Prediction -- "related_to" --> Use_case
+  Prescriptive_recommendations -- "generated_from" --> Prediction
+  Prescriptive_recommendations -- "related_to" --> Use_case
+  Privacy -- "protected_by" --> Security
+  Real-time_Monitoring -- "drives" --> Dashboards
+  Reliability -- "contributes_to" --> Resilience
+  Reliability -- "achieved_through" --> Resilience
+  Reliability -- "monitored_by" --> System_Monitoring
+  Scientific_Domain -- "related_to" --> Use_case
+  Sensor -- "provides" --> Data_source
+  Sensor -- "has_specification" --> Sensor_metadata
+  Sensor_metadata -- "describes" --> Sensor
+  Simulation_models -- "part_of" --> Analytical_model
+  Simulation_models -- "stored_in" --> Simulation_Model_Repository
+  Synthetic_data_generation -- "produced_by" --> Analytical_model
+  System_monitoring -- "controlled_by" --> Command_and_control
+  System_monitoring -- "tracks" --> Device_Management
+  Temporal_data_store -- "supports" --> Real-time_Monitoring
+  Type_of_Digital_Twin -- "related_to" --> DT_readiness_scale
+  Type_of_Digital_Twin -- "classified_as" --> Stage_of_development
+  Virtual_reality -- "used_by" --> Dashboards
 ```
